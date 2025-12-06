@@ -66,13 +66,13 @@ export default function TodoApp() {
   return (
     <div className="app-background">
       <div className="todo-container">
-        <h1>✨ Task Master</h1>
+        <h1>✨ Todo Lister </h1>
 
         {/* Add Todo Section */}
         <div className="section-group add-todo-group">
           <input
             type="text"
-            placeholder="What's the task title?"
+            placeholder="What's the Todo title?"
             className="todo-input"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -89,7 +89,7 @@ export default function TodoApp() {
             disabled={!title.trim() || !todoText.trim()}
             className="button button-add"
           >
-            Create Task
+            Create Todo
           </button>
         </div>
 
